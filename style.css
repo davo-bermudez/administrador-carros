@@ -1,0 +1,150 @@
+:root{
+    --border-redius:20px;
+    --bordes: rgb(238, 238, 238) ;
+    --inputs: rgb(17, 68, 17);
+    --orange: rgb(255, 94, 0) ;
+    --red: crimson ;
+    --glass: rgba(30 30 30 / 20%) ;
+    --filter: blur(10px);
+    --glass30:rgba(176, 173, 173, 0.2) ;
+    --glass10: rgba(0, 0, 0, 0.2) ;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--fondo);
+    background-image: url(imagenes/fondo.jpg);
+    background-size: cover;
+    gap: 30px;
+    padding-top: 20px;
+
+}
+.infovehi{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.formularioc{
+    background-color: var(--glass);
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    border-radius: var(--border-redius);
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.todo{
+    background-color: var(--glass);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-redius);
+    border: solid var(--bordes) 1px;
+    width: 800px;
+    padding: 20px;
+    display: flex;
+    gap: 20px;
+}
+header{
+    background-color: var(--glass);
+    backdrop-filter: blur(10px);
+    border-radius: var(--border-redius);
+    height: 40px;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+
+}
+
+label{
+    color: var(--bordes);
+}
+header h1{
+    color: aliceblue;
+}
+
+#titulo{
+    background-color: var(--glass30);
+    border-radius: var(--border-redius);
+    padding: 10px;
+    width: 270px;
+    display: flex;
+    justify-content: center;
+    font-size: xx-small;
+
+
+}
+#titulo h1{
+    color: var(--bordes);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+input{
+    background-color: var(--glass10);
+    border: none ;
+    padding: 10px;
+    border-radius: var(--border-redius);
+    width: 270px;
+
+}
+
+#agregar{
+    background-color: var(--bordes);
+    border: none ;
+    padding: 10px;
+    border-radius: var(--border-redius);
+
+
+}
+
+.registrados{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
+.peo{
+    width: 500px;
+    gap: 20px;
+}
+
+#regivehi{
+    color: var(--bordes);
+}
+
+.registrados div{
+    background-color: var(--glass30);
+    padding: 10px;
+    border-radius: var(--border-redius);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tipovehi{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 50px;
+    width: 270px;
+}
+
+.tipovehi h1{
+    color: var(--bordes);
+}
+
+#mean{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
