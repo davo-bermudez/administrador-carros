@@ -10,32 +10,35 @@
 <body>
     <header>
         <h1>registro de vehiculos</h1>
-
     </header>
 
     <section class="todo">
         <main class="formularioc">
 
-            <h1>registrar vehiculo</h1>
+            <div id="titulo">
+                <h1>REGISTRO VEHICULOS</h1>
+            </div>
             <form action="">
                 <div class="tipovehi">
-                    <h1>tipo de vehiculo:</h1>
-                    <label for="">carro</label>
-                    <input  type="radio">
-                    <label for="">moto</label>
-                    <input type="radio" name="" id="">
+                    <div>
+                        <h1>tipo de vehiculo:</h1>
+                    </div>
+                    <div id="mean">
+                        <label for="">carro</label>
+                        <input name="vehiculo" id="car"  type="radio" required>
+                        <label for="">moto</label>
+                        <input name="vehiculo" id="bike" type="radio" required>
+                    </div>
                 </div>
-
+                <!-- hola -->
                 <div class="infovehi" >
-                    <form action="">
-                        
                         <label for=""></label>
-                        <input placeholder="diseño" type="text" name="" id = "diseño">
-                        <input placeholder="placa" type="text" id = "placa" >
-                        <input placeholder="modelo" type="text" id = "modelo">
-                        <input placeholder="marca" type="text" id = "marca">
-                        <button id="agregar" type="submit">registrar vehiculo</button>
-                    </form>
+                        <input style="display: none;" id="cilindraje" type="text" placeholder="cilindraje">
+                        <input placeholder="diseño" type="text"  id = "diseño" required>
+                        <input placeholder="placa" type="text" id = "placa" required>
+                        <input placeholder="modelo" type="text" id = "modelo" required>
+                        <input placeholder="marca" type="text" id = "marca" required>
+                        <button id="agregar" type="button">registrar vehiculo</button>
                 </div>
             </form>
         </main>
@@ -50,6 +53,5 @@
 
         </section>
     </section>
-    
 </body>
 </html>
